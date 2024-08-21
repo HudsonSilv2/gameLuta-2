@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+<body>
+    <img src="./assets/images/arena2.webp" alt="arena" class="arena" hidden>
+<div class="person-image" hidden>
+    <img src="" alt="" class="heroi-image">
+    <img src="" alt="" class="monster-image">
+</div>
+
+    <div class="fightarea">
+        <div id="char">
+            <div class="lifebar">
+                <div class="bar" style="width: 10%;"></div>
+            </div>
+            <strong class="name">--</strong>
+            <div>
+                <button class="attackButton">Atacar</button>
+            </div>
+        </div>
+        <div id="monster">
+            <div class="lifebar">
+                <div class="bar" style="width: 10%;"></div>
+            </div>
+            <strong class="name">--</strong>
+            <div>
+                <button class="attackButton">Atacar</button>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <ul class="log">
+        <box-icon name='message-dots' color='rgba(0,0,0,0.51)' ></box-icon>
+    </ul>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./assets/js/functions.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
