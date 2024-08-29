@@ -6,11 +6,15 @@
 .fightarea {
     display: flex;
     gap: 20px;
+    padding: 20px;
 }
 
 #char,
 #monster {
     flex: 1;
+    background-color: #9e9e9e;
+    padding: 8px;
+    border-radius: 15px;
 }
 
 .lifebar {
@@ -29,7 +33,8 @@
 .name {
     margin: 10px;
     font-size: 24px;
-    color: #444;
+    color: #333;
+    background-color: #9e9e9e;
 }
 
 .attackButton {
@@ -40,10 +45,27 @@
     box-shadow: 3px 4px 4px #333;
 }
 
+.attackButton:hover {
+    box-shadow: none;
+    background-color: #e7e7e7;
+}
+
+.attackdiv {
+    background-color: #9e9e9e;
+    display: flex;
+    align-items: center;
+}
+
 .log {
-    border: 1px dotted #999;
+    border: 1px double #ccc;
     height: 200px;
+    width: 600px;
+    flex: 1;
     overflow-y: scroll;
+}
+
+.area-log {
+    padding: 20px;
 }
 
 .arena {
@@ -51,4 +73,21 @@
     height: 800px;
     padding: 20px;
     margin: 10px;
+}
+
+/* Icons */
+.shield {
+    background-color: #9e9e9e;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Images */
+.person-image {
+    width: 190px;
+    height: 190px;
+    display: contents;
+    justify-content: space-between;
+    padding: 50px;
 }

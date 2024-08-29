@@ -3,28 +3,40 @@ const defaltCharacter = {
     life: 1,
     maxLife: 1,
     attack: 0,
-    defense: 0
+    defense: 0,
+    sx: [
+        male = 'Homem',
+        female = 'Mulher'
+    ]
 }
 
-const createKnight = (name) => {
+const createKnight = (name, sx) => {
     return {
         ...defaltCharacter,
         name,
         life: 100,
         maxLife: 100,
         attack: 10,
-        defense: 8
+        defense: 8,
+        sx: [
+            male = 'Homem',
+            female = 'Mulher'
+        ]
     }
 }
 
-const createSorcerer = (name) => {
+const createSorcerer = (name, sx) => {
     return {
         ...defaltCharacter,
         name,
         life: 50,
         maxLife: 50,
         attack: 14,
-        defense: 3
+        defense: 3,
+        sx: [
+            male = 'Homem',
+            female = 'Mulher'
+        ]
     }
 }
 

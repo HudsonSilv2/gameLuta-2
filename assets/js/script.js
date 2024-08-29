@@ -1,4 +1,4 @@
-const char = createKnight('Hudson');
+const char = createKnight('Hudson', female);
 const monster = createBigMonster();
 
 stage.start(
